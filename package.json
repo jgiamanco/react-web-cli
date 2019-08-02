@@ -1,0 +1,23 @@
+{
+  "name": "react-web-cli",
+  "version": "0.0.1",
+  "description": "React Web CLI - An intuitive web cli which helps you create custom react projects with your own packages on your computer!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "client-install": "npm install --prefix client",
+    "server": "nodemon app.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Shreyas Balachandran <shreyas.bba@gmail.com> (https://www.shreyasb.io/)",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
